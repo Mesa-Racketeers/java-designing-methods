@@ -15,20 +15,19 @@
 	<ul>
 	  <li><a href="#introduction">Introduction</a></li>
 	  <li><a href="#designrecipe">The Design Recipe</a></li>
-	  <li><a href="#stop-sign">Stop Sign</a></li>
-	  <li><a href="#counterchange">Counter-Change</a></li>
-	  <li><a href="#bulls-eye">Bulls-Eye</a></li>
-	  <li><a href="#pinwheel">Pinwheel</a></li>
-	  <li><a href="#business-card">Business Card</a></li>
-	  <li><a href="#clock-face">Clock Face</a></li>
+	  <li><a href="#INSERT NAME HERE">INSERT NAME HERE</a></li>
+	  <li><a href="#INSERT NAME HERE">INSERT NAME HERE</a></li>
+	  <li><a href="#INSERT NAME HERE">INSERT NAME HERE</a></li>
+	  <li><a href="#INSERT NAME HERE">INSERT NAME HERE</a></li>
+	  <li><a href="#INSERT NAME HERE">INSERT NAME HERE</a></li>
+	  <li><a href="#INSERT NAME HERE">INSERT NAME HERE</a></li>
 	</ul>
       </div>
 
       <div class="column content">
 	<div class="header">
 	  <h1>
-            <img src="https://racket-lang.org/img/racket-logo.svg" width="25px"/>
-            Designing Picture Functions with Racket
+            Design Functions in Java
 	  </h1>
           <p style="text-align:center;">
             <i>By Rowan Weir, Daniel Barnas, Allan Schougaard</i>
@@ -42,8 +41,8 @@
 	<h2 id="introduction"> Introduction</h2>
 
 	<p>
-	 
-		Fill in Introduction
+	    To start, we have learned various Data Types and how they behave/interact in different ways when programming. ADD MORE; like class, object, method summaries.
+		
 	</p>
 
 
@@ -66,12 +65,10 @@
 	  Fill in Recipe Components
 	</p>
 	<p>
-	  The steps in the design recipe can be broken down as follows:
+	  The steps in the design recipe can be broken down as follows: **UP FOR DISCUSSION EXACTLY WHAT STEPS WITHIN THE RECIPE WE WANT**
 	  <ol>
 	    <li>Purpose</li>
 	    <li>Signature</li>
-	    <li>Examples</li>
-	    <li>Stub</li>
 	    <li>Template</li>
 	    <li>Code</li>
 	  </ol>
@@ -146,79 +143,6 @@
 
 	<!-- SECTION 1.3 -->
 
-	<h3 id="Examples">Examples</h3>
-
-	<p>
-	FILL IN POSSIBLE TESTING PORTION OF RECIPE/DISCUSS MORE WITH ALAN FIRST
-	  <br>
-	  It is important to write examples prior to coding your function, because you will continually test your program as you add more to the code.
-	  <br>
-	  The function is most commonly used in Racket to create tests is <code>check-expect</code>.
-	  The check-expect function receives the name of your function and test arguments for each datatype you specified in your signature.
-	  It also includes the result you expect from your function, given the inputs provided.
-	  If we were to write the signature for the <code>check-expect</code> function, it might be:
-	  <code class="block">
-	    ; Signature : your-function datatype(s) expected-result &rarr; boolean
-	  </code>
-	  Remember, the number of inputs and the datatypes of the inputs and output should match the signature you wrote for your function.
-	  <br>
-	  Since the <code>check-expect</code> function requires the name of your function, this is our first opportunity to come up with a good name for the function we are designing.
-	  A good practice for function naming is to follow the verb-noun form.
-	  This convention includes a verb to denote the action your function is taking, and a noun to denote what is being acted upon.
-	  This function, for example, might be called square-number.
-	  Squaring is the action we are taking, and a number is what we are squaring.
-	<p/>
-	<p>
-	  Let's see how <code>check-expect</code> applies to our square-number function.
-	  <code class="block">
-	    ; Examples :
-	    (check-expect (square-number 3) 9)
-	  </code>
-	  The first argument is the square-number function that we are testing and our test input 3.
-	  The last argument is what the function is expected to return given the input, in this case 9.
-	  <br>
-	  Now, this test alone does not cover all scenarios our function needs to handle.
-	  We need to create additional test cases for all the conditions we expect our function to encounter.
-	  <code class="block">
-	    ; Examples :
-	    (check-expect (square-number 3) 9)
-	    (check-expect (square-number 0) 0)
-	    (check-expect (square-number -4) 16)
-	  </code>
-	  This will ensure that all parts of our function works.
-	  As mentioned earlier, <code>check-expect</code> is the function most commonly used to test examples, but there are others.
-	  It is sufficient for the needs of this chapter, and for most functions that will return images.
-	  If you'd like to learn more about other test functions, be sure to check out the documentation regarding <code>check-within</code>, <code>check-random</code>, and <code>check-satisfied</code>.
-	</p>
-
-	<!-- SECTION 1.4 -->
-
-	<h3 id="Stub">Stub</h3>
-
-	<p>
-	 FILL IN STUB COMPONENTS
-	  <br>
-	  Most of the stub is written like a full function definition.
-	  Begin with the name of the function you are working on as well as any parameters representing the inputs that the function will take.
-	  Remember, these should match the inputs noted in the signature up above.
-	  <br>
-	  If we can get the test functions to run, even if they fail, we are still closer to our goal than if the test functions failed to run at all.
-	  For this reason, we include some bogus value instead of a full function body, preferably of the same data type as the function's expected output.
-	  We want to enter a bogus value to eliminate the chance that our tests will pass.
-	  <br>
-	  Let's see what a stub would look like for our example:
-	  <code class="block">
-	    ; Stub :
-	    (define (square-number num) -1)
-	  </code>
-	  We know the value -1 will never be an actual result, since the result of <code>square-number</code> will never be negative.
-	  <br>
-	  Run the stub.
-	  <div class="question">
-	    What happens? Is the result what we anticipated?
-	  </div>
-	</p>
-
 	<h3 id="Template">Template</h3>
 
 	<p>
@@ -240,6 +164,8 @@
 	  In the next section, we will fill out the gaps in our template.
 	</p>
 
+	<!-- SECTION 1.3 -->
+	
 	<h3 id="Code">Code</h3>
 
 	<p>
